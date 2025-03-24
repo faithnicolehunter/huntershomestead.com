@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunter's Homestead</title>
+    
+    <!-- Google Font: Homemade Apple -->
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .footer-content {
+            font-family: 'Homemade Apple', cursive;
+            font-size: 16px;
+        }
+
+        .content-wrapper {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: row-reverse; /* Reverse the order to move the map to the left */
+        }
+
+        .map {
+            margin-left: 200px; /* Adjust margin to the left */
+            margin-right: 200px;
+            width: 400px; /* Adjust width */
+            height: 300px; /* Adjust height */
+            align-items: center;
+        }
+
+        .opening-times {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .book-now-button {
+            margin-top: 400px;
+            margin-right: -780px; /* Move the button slightly to the left */
+            padding: 20px 40px 20px; /* Increase padding to make the button larger */
+            background-color: rgb(92, 74, 46);
+            font-family: homemade apple;
+            position: relative;
+            font-size: 30px; /* Increase font size for better visibility */
+            color: #c8a165;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 700px; /* Adjust width */
+            height: 120px; /* Adjust height */
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="index-page">
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Hunter's Homestead</h1>
+            <hr>
+            <h2> There's something for everyone! </h2>
+            <hr> 
+        </div>
+
+        <div class="black-box">
+            <!-- Add content inside if needed -->
+        </div>
+        <div class="stamp-box">      
+            <a href="cafe.html" target="_blank" class="stamp">
+                <img src="webroot/cafestamp.png" alt="Cafe">
+                <span class="stamp-text">Cafe</span>
+            </a>
+            <a href="farm.html" target="_blank" class="stamp">
+                <img src="webroot/farmstamp.png" alt="Farm & Playpark">
+                <span class="stamp-text">Farm & Playpark</span>
+            </a>
+            <a href="petzoo.html" target="_blank" class="stamp">
+                <img src="webroot/pettingzoostamp.png" alt="Petting Zoo">
+                <span class="stamp-text">Petting Zoo</span>
+            </a>
+            <a href="shop.html" target="_blank" class="stamp">
+                <img src="webroot/shopstamp.png" alt="Shop">
+                <span class="stamp-text">Shop</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <section class="opening-times">
+            <div class="container">
+                <div class="content">
+                    <h2>Opening Times</h2>
+                    <p>We’re open five days a week from March through October 2025.</p>
+        
+                    <h3>Barn, Shop & Cafe Opening Times</h3>
+                    <p><strong>Mon: </strong> 9am - 5pm</p>
+                    <p><strong>Tues: </strong> CLOSED</p>
+                    <p><strong>Wed: </strong> 9am - 5pm</p>
+                    <p><strong>Thurs: </strong> CLOSED</p>
+                    <p><strong>Fri: </strong> 1pm - 8pm</p>
+                    <p><strong>Sat: </strong> 9am - 8pm</p>
+                    <p><strong>Sun: </strong> 9am - 5pm</p>
+        
+                    <h3>Petting Zoo Opening Times</h3>
+                    <p><strong>Mon: </strong> 10am - 4pm</p>
+                    <p><strong>Tues: </strong> CLOSED</p>
+                    <p><strong>Wed: </strong> 10am - 4pm</p>
+                    <p><strong>Thurs: </strong> CLOSED</p>
+                    <p><strong>Fri: </strong> 2pm - 7pm<br>Autism-friendly sessions between 3pm-5pm**</p>
+                    <p><strong>Sat: </strong> 10am - 7pm<br>Autism-friendly sessions between 3pm-5pm**</p>
+                    <p><strong>Sun: </strong> 10am - 4pm</p>
+                    <hr>
+                    <p>**Autism-friendly sessions are quieter and have a sensory-friendly environment.</p>
+                    <p>Please note that during peak times, tickets booked in advance have priority over those who show up on the day. Please book online early to avoid disappointment.</p>
+                </div>
+            </div>
+        </section>
+        
+        <iframe 
+        class="map"
+        src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d61635.488799452585!2d-2.8079474135567253!3d55.472876944827775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m5!1s0x4887b800a5982623%3A0x64f2147b7ce71727!2sEdinburgh!3m2!1d55.953252!2d-3.1882669999999997!4m3!3m2!1d55.4340056!2d-2.7340619!5e0!3m2!1sen!2suk!4v1742494561493!5m2!1sen!2suk"
+        width="300" 
+        height="200" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+        </iframe>
+
+         <!-- Book Now Button -->
+         <button class="book-now-button" onclick="window.location.href='booknow.html';">Click to Book Tickets!</button>
+    </div>
+    <div class="address">
+        <section class="address-box">
+        <h2>Where to find us:</h2>
+        <p class="address-text">Approx. 51 miles south of Edinburgh,</p>
+        <p class="address-text">Hunter's Homestead, Hawick, TD9 8LH</p>
+        <p class="address-text">01287-XXX-XXXX</p>
+        </section>
+    </div>
+
+<div class="small-images">
+    <img src="webroot/tourismlogo.avif" alt="Image 1" height="156" style="width: auto;">
+    <img src="webroot/visitorlogo.png" alt="Image 2" height="156" style="width: auto;">
+</div>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; Hunter's Homestead. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>

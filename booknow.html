@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tickets</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your existing CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1 style="text-align: center;">We can't wait to see you!</h1>
+    </header>
+
+    <nav>
+        <div style="text-align: center;">
+            <a href="index.html" class="return-home">Home page</a>
+        </div>
+    </nav>
+
+    <main class="booking-container">
+        <h2>Bookings</h2>
+        <p>To access barn, play area, petting zoo and more.</p>
+        <form action="submit_booking.php" method="post">
+            <label>Please select ticket type & quantity:</label>
+            <div id="ticket-types">
+                <div>
+                    <label for="adult-quantity">Adult Tickets:</label>
+                    <input type="number" id="adult-quantity" name="adult-quantity" min="0" max="10" value="0">
+                </div>
+                <div>
+                    <label for="child-quantity">Child Tickets:</label>
+                    <input type="number" id="child-quantity" name="child-quantity" min="0" max="10" value="0">
+                </div>
+                <div>
+                    <label for="concession-quantity">Concession Tickets:</label>
+                    <input type="number" id="concession-quantity" name="concession-quantity" min="0" max="10" value="0">
+                </div>
+                <p style="font-size: 0.8em; color: gray; max-width: 250px; line-height: 1.2;">Concession tickets are available for students, individuals with disabilities, and senior citizens aged 60 and above. We aim to make our events accessible to everyone.</p>
+            </div>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method" name="payment-method" required>
+                <option value="" disabled selected>Select a payment method</option>
+                <option value="credit-card">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="bank-transfer">Bank Transfer</option>
+            </select>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-content" style="font-family: 'Homemade Apple', cursive;">
+            <p>&copy; <strong>2025 Hunter's Homestead</strong></p>
+        </div>
+    </footer>
+</body>
+</html>

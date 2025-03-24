@@ -1,0 +1,1122 @@
+/* Background image and centering for index.html only */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    width: 100%;
+    height: 100%;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse; /* Reverse the order to move the map to the left */
+    flex-wrap: wrap; /* Ensure content wraps properly */
+    justify-content: center;
+}
+/* Background image and centering for index.html only */
+.index-page header {
+    background-image: url('webroot/banner.jpg'); /* Applies only to index.html */
+    background-size: cover;
+    background-position: center;
+    color: gray;
+    height: 700px; /* Cropped height */
+    position: relative;
+    text-align: center;
+    padding-top: 100px; /* Moves text down */
+}
+
+/* Bar for a href images */
+.image-bar {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Spacing between images */
+    margin-top: 20px;
+}
+
+.image-bar a {
+    display: inline-block;
+    width: 100px; /* Adjust width */
+    height: 100px; /* Adjust height */
+    overflow: hidden;
+    box-shadow: 0 4px 6px gray;
+    transition: transform 0.3s;
+}
+
+.image-bar a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image is cropped */
+}
+
+
+h1 {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 60px;
+    color: gray; /* Explicitly set color to gray */
+/* Title styling */
+
+}
+
+h2 {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-bottom: 20px; /* Adjusts spacing */
+    color: gray; /* Explicitly set color to gray */
+}
+
+/* Divider */
+hr {
+    width: 20%;
+    border: 1px solid gray;
+    margin: 20px auto; /* Centers the line */
+}
+
+/* Divider */
+hr {
+    width: 20%;
+    border: 1px solid gray;
+    margin: 20px auto; /* Centers the line */
+}
+
+/* Opening hours */
+p {
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+
+/* Dark overlay for better text contrast */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 88.6%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Ensure content appears above the overlay */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+/* Subtitle text */
+.hero p {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.black-box {
+    background-color: rgb(93, 75, 47); /* Makes it brown */
+    width: 100%; /* Full width */
+    height: 800px; /* Increased height */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    margin: 0 auto; /* Ensures no extra spacing */
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* Ensures text appears on top */
+    padding: 20px;
+}
+
+.black-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* Adjust height */
+    background-color: rgb(93, 75, 47);
+    
+}
+
+.black-box2 {
+    background-color: rgb(92, 74, 46); /* Makes it brown */
+    width: 100%; /* Full width */
+    height: 800px; /* Increased height */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    margin: 0 auto; /* Ensures no extra spacing */
+}
+.stamp-box {
+    position: relative;
+    z-index: 3; /* Ensures stamps appear above */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.stamp-box img {
+    width: 300px; 
+    height: auto;
+}
+
+.stamp-box {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.stamp {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.stamp img {
+    width: 250px; /* Adjust size */
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Add shadow effect on hover */
+.stamp:hover img {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.199);
+    transform: scale(1.1);
+}
+
+/* Style for the text overlay */
+/* Style for the text overlay */
+.stamp-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.348);
+    color: white;
+    font-family: Homemade Apple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Show text on hover */
+.stamp:hover .stamp-text {
+    opacity: 1;
+}
+
+/* Add shadow effect to each stamp */
+.stamp {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    
+}
+
+/* Enhance shadow and scale on hover */
+.stamp:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Dark overlay for the banner */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.footer {
+    background-color: rgb(93, 75, 47); /* Adjust color as needed */
+    color: white;
+    font-size: 12px;
+    text-align: left;
+    padding: 10px; /* Add padding for better spacing */
+    position: relative;
+    width: 100%;
+    font-family: "Homemade Apple", cursive;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* Restrict large text only to hero section */
+.hero p {
+    font-size: 60px;
+}
+
+/* Ensure footer remains small */
+footer p {
+    font-size: 12px !important; /* Override other rules */
+}
+
+
+.stamp-box {
+    margin: 0;
+    padding: 0;
+}
+.opening-times {
+    background-color: rgb(93, 75, 47); /* Brown background */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 40px 0 40px auto; /* Align to the right */
+    font-family: Arial, sans-serif;
+    color: white; /* White text for contrast */
+    flex: 1;
+}
+
+/* Opening times section */
+.opening-times {
+    flex: 1;
+    margin: 20px;
+}
+
+.opening-times .content {
+    text-align: left;
+}
+
+.opening-times h2 {
+    color: #d2b48c; /* Light tan title */
+    font-size: 35px;
+    font-weight: normal;
+    margin-bottom: 1px;
+    
+}
+
+.opening-times h3 {
+    color: #c8a165; /* Tan subtitle */
+    font-family: Homemade Apple;
+    font-weight: normal;
+    font-size: 30px;
+    margin-top: 10px;
+    padding: 15px 0 1px; /* Adjust padding for better spacing */
+}
+.opening-times p {
+    font-size: 16px;
+    line-height: 1.1; /* Reduced line height for closer spacing */
+    color: #f5f5f5; /* Light text for readability */
+}
+
+.opening-times strong {
+    color: #d2b48c; /* Light tan for emphasis */
+}
+
+.opening-times p {
+    margin-bottom: 3px; /* Further reduce space between opening times */
+    line-height: 1.2; /* Adjust line spacing for better readability */
+}
+
+.opening-times p:last-of-type {
+    margin-top: 10px; /* Slightly reduce spacing for the last paragraph */
+    line-height: 1.4; /* Keep paragraph readability */
+    margin-bottom: 80px;
+}
+
+iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px gray;
+    height: 450px;
+    width: 600px;
+    margin-left: 200px; /* Moves the iframe slightly to the right */
+    margin-top: 40px;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 20px; /* Space between sections */
+}
+
+.map-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the button under the map */
+}
+
+.map {
+    width: 300px;
+    height: 200px;
+    border: 0;
+    margin: 20px; /* Adjust margin for spacing */
+    width: 400px; /* Adjust width */
+    height: 300px; /* Adjust height */
+}
+
+
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Space between sections */
+    flex-direction: row-reverse; /* Reverse the order to move the map to the left */
+    flex-wrap: wrap; /* Ensure content wraps properly */
+    justify-content: center;
+}
+
+/* Map container to align map and button properly */
+.map-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers button under the map */
+    margin-top: 20px; /* Adjust spacing */
+}
+
+.map {
+    width: 300px;
+    height: 200px;
+    border: 0;
+    margin: 20px; /* Adjust margin for spacing */
+    width: 400px; /* Adjust width */
+    height: 300px; /* Adjust height */
+}
+
+/* Styling for the "Book Now" button */
+.book-now-button {
+    margin-top: 15px; /* Space between map and button */
+    padding: 10px 40px; /* Adjusted padding for a balanced look */
+    color: white;
+    background-color: rgb(93, 75, 47); /* Matches brown aesthetic */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Arial, sans-serif; /* Changed to Arial */
+    color: white; /* Set font color to white */
+    font-weight: normal; /* Ensure font is not bold */
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin: 40px auto; /* Center the button */
+    padding: 20px 40px; /* Increase padding for better size */
+    background-color: rgb(92, 74, 46);
+    font-family: 'Homemade Apple', cursive;
+    font-size: 30px; /* Increase font size for better visibility */
+    color: #c8a165;
+    width: 650px; /* Adjust width */
+    height: 120px; /* Adjust height */
+    text-align: center;
+    display: block; /* Center the button */
+    }
+
+    /* Hover effect */
+    .book-now-button:hover {
+        background-color: #d2b48c; /* Light tan for hover */
+        color: black;
+        transform: scale(1.05); /* Slight zoom effect */
+    }
+
+    .address-box {
+        background-color: rgb(93, 75, 47); /* Brown background */
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 600px;
+        margin: -560px 0 0 30px; /* Positioned further up and more to the left */
+        font-family: Arial, sans-serif; /* Changed to Arial */
+        color: white; /* White text for contrast */
+        font-size: 18px; /* Slightly larger text size */
+        font-weight: normal; /* Ensure font is not bold */
+        text-align: center; /* Center align text */
+        margin-left: 150px; /* Moves the address box to the right */
+    }
+
+    .address-box .address {
+        font-size: 22px; /* Slightly larger text size */
+        color: #d2b48c; /* Light tan for emphasis */
+        font-family: Arial, sans-serif; /* Changed to Arial */
+        font-weight: normal; /* Ensure font is not bold */
+        text-align: center; /* Center align text */
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between; /* Aligns content to the sides */
+        padding: 10px; /* Adjusted padding for better spacing */
+        background-color: rgb(45, 37, 23); /* Darker brown for footer */
+        color: white;
+        font-size: 16px;
+        font-family: Arial, sans-serif; /* Changed to Arial */
+        font-weight: normal; /* Ensure font is not bold */
+        height: 50px; /* Slightly taller footer */
+    }
+
+    .booking-container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background: rgb(93, 75, 47); /* Matches brown aesthetic */
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        font-family: Arial, sans-serif; /* Changed to Arial */
+        color: white;
+        font-weight: normal; /* Ensure font is not bold */
+    }
+
+    .booking-container h2 {
+        text-align: center;
+        color: #d2b48c; /* Light tan for title */
+        font-size: 28px;
+        font-family: 'Homemade Apple', cursive; /* Kept Homemade Apple */
+    }
+
+    .booking-container p {
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 1.5; /* Adjusted line height for better readability */
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        margin-top: 10px;
+        color: #d2b48c; /* Light tan for labels */
+        font-family: Arial, sans-serif; /* Changed to Arial */
+        font-weight: normal; /* Ensure font is not bold */
+    }
+
+    input, select {
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-family: Arial, sans-serif; /* Changed to Arial */
+        font-weight: normal; /* Ensure font is not bold */
+    }
+
+    button {
+        margin-top: 15px;
+        padding: 10px;
+        background: #d2b48c; /* Light tan for button */
+        color: black;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+        font-family: Arial, sans-serif; /* Changed to Arial */
+        font-weight: normal; /* Ensure font is not bold */
+        transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    button:hover {
+        background: #c8a165; /* Slightly darker tan for hover */
+        transform: scale(1.05); /* Slight zoom effect */
+    }
+    .return-home {
+        display: block;
+        text-align: center;
+        margin-top: 2px;
+        color: rgb(93, 75, 47); /* Matches brown aesthetic */
+        font-family: homemade apple; 
+        font-weight: normal; /* Ensure font is not bold */
+        text-decoration: none;
+        font-size: 20px; /* Slightly larger text for better readability */
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .return-home:hover {
+        color: #d2b48c; /* Light tan for hover */
+        transform: scale(1.05); /* Slight zoom effect */
+    }
+
+/* Apply only to cafe.html */
+.cafe-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f1e8; /* Light beige */
+    color: #333; 
+}
+
+/* Header Styling */
+.cafe-page header {
+    background-image: url('webroot/coffee-diary-spectacles-wooden-desk.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    position: relative;
+    text-align: center;
+    color: gray;
+    padding-top: 50px;
+}
+
+
+.cafe-page header h1 {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 50px;
+    color: gray;
+}
+
+/* Navigation */
+.cafe-page nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Brown Box Styling */
+.cafe-page .menu-box, 
+.cafe-page .vegan-box, 
+.cafe-page .gluten-box, 
+.cafe-page .drinks-box {
+    background-color: rgb(93, 75, 47); /* Dark brown */
+    color: white; /* White text */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Headings */
+.cafe-page h2 {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #d2b48c; /* Light brown */
+}
+
+/* Lists */
+.cafe-page ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cafe-page li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+/* Zoo Page Styling */
+.zoo-page {
+    background-color: white; /* Light beige */
+    text-align: center;
+        padding: 20px; /* Add padding for spacing */
+    }
+
+    /* Zoo Section */
+    .zoo-box {
+        background-color: rgb(143, 105, 70); /* Brown */
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px auto;
+        max-width: 90%; /* Adjusted to fit within the viewport */
+        box-sizing: border-box; /* Include padding in width calculation */
+    }
+
+    /* Animal Grid */
+    .animal-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted min size */
+        gap: 20px;
+        padding: 20px;
+        max-width: 100%; /* Ensure it fits within the container */
+        margin: 0 auto;
+        box-sizing: border-box; /* Include padding in width calculation */
+    }
+
+    /* Individual Animal Cards */
+    .animal {
+        display: flex;
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center;
+        font-family: 'Homemade Apple', cursive;
+        font-weight: normal;
+        color: white;
+        text-align: center;
+        background-color: rgb(93, 75, 47); /* Brown background */
+        padding: 15px; /* Adjusted padding for better fit */
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        font-size: 12px; /* Reduced font size */
+    }
+
+    /* Animal Images */
+    .animal img {
+        width: 100%; /* Scale image to fit container */
+        max-width: 300px; /* Increased maximum width */
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        margin-bottom: 10px; /* Add spacing below image */
+    }
+
+    /* Animal Text */
+    .animal-text {
+        text-align: center;
+        margin: 0;
+        font-size: 10px; /* Reduced font size */
+        line-height: 1.4; /* Improved readability */
+    }
+
+    .shop-page {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f1e8; /* Light beige */
+        color: #333;
+    }
+
+    /* Header Styling */
+    .shop-page header {
+        background-image: url('webroot/banner.jpg'); /* Replace with your shop banner image */
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+        position: relative;
+        text-align: center;
+        color: gray;
+        padding-top: 50px;
+    }
+
+    .shop-page header h1 {
+        font-family: 'Homemade Apple', cursive;
+        font-size: 50px;
+        color: gray;
+    }
+
+    /* Shop Container Styling */
+    .shop-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 20px auto;
+        box-sizing: border-box;
+    }
+
+    /* Individual Product Cards */
+    .product-card {
+        background-color: rgb(93, 75, 47); /* Dark brown */
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        max-width: 300px;
+        flex: 1 1 calc(33.333% - 40px); /* Responsive grid layout */
+        box-sizing: border-box;
+    }
+
+    /* Product Image */
+    .product-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* Product Title */
+    .product-card h2 {
+        font-family: 'Homemade Apple', cursive;
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #d2b48c; /* Light tan */
+    }
+
+    /* Product Description */
+    .product-card p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+
+    /* Product Price */
+    .product-card .price {
+        font-size: 18px;
+        font-weight: bold;
+        color: #c8a165; /* Tan */
+        margin-bottom: 10px;
+    }
+
+    /* Add to Cart Button */
+    .product-card button {
+        padding: 10px 20px;
+        background: #d2b48c; /* Light tan */
+        color: black;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .product-card button:hover {
+        background: #c8a165; /* Slightly darker tan */
+        transform: scale(1.05); /* Slight zoom effect */
+    }
+
+    .small-images {
+        display: flex;
+        justify-content: flex-start; /* Align logos to the left */
+        gap: 10px; /* Add spacing between the logos */
+        margin: 20px 0; /* Add vertical spacing */
+        margin-left: 300px; /* Move the logos further to the left */
+        margin-top: -180px; /* Adjust vertical position */
+    }
+
+.small-images img {
+    height: 156px;
+    width: auto;
+}
+
+/* Background image for shop.html */
+.shop-page header {
+    background-image: url('webroot/locally-grown-farming-products-empty-farmers-market-stand.jpg'); /* Path to the new background image */
+    background-size: cover;
+    background-position: center;
+    color: gray;
+    height: 700px; /* Cropped height */
+    position: relative;
+    text-align: center;
+    padding-top: 100px; /* Moves text down */
+}
+
+/* Styles specific to shop.html */
+.shop-page {
+    background-image: url('webroot/fresh-organic-vegetables.jpg'); /* Background specific to shop.html */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Ensure the background covers the full viewport height */
+    margin: 0; /* Remove any white border/margin */
+    padding: 0; /* Remove padding to ensure full coverage */
+    color: black; /* Ensure text is readable */
+}
+
+.shop-page header {
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 40px;
+    color: white;
+}
+
+.shop-page .shop-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.shop-page .product-category {
+    background-color: rgb(143, 105, 70); /* Slightly transparent white background */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    
+}
+
+.shop-page .product-category h2 {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #c9bebe;
+}
+
+.shop-page .product-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.shop-page .product-category li {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.shop-page footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    font-family: 'Homemade Apple', cursive;
+}
+
+/* Add images under the ul and before the paragraph about bulk buying */
+.shop-page .product-category {
+    position: relative;
+}
+
+.shop-page .product-category .images-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.shop-page .product-category .images-container img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Shop Images Section */
+.shop-images {
+    display: flex;
+    justify-content: center; /* Center the images */
+    gap: 20px; /* Add spacing between the images */
+    margin: 20px 0; /* Add vertical spacing */
+}
+
+.shop-images img {
+    width: 500px; /* Set a fixed width for the images */
+    height: 300px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensure the images are cropped properly */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 0.3s; /* Add a hover effect */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333; /* Dark background for contrast */
+    color: white; /* White text for readability */
+    text-align: center;
+    padding: 0;
+    border: none; /* Ensure no border is applied */
+    margin: none;
+}
+
+.footer-content {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 16px;
+}
+/* Hero Section for farm.html */
+.farm-page .hero {
+    background-image: url('webroot/farm-header.jpg'); /* Replace with the actual header image path */
+}
+
+.farm-page .hero-content h1 {
+    font-family: 'Homemade Apple', cursive;
+    color: rgb(93, 75, 47);
+    font-size: 60px;
+    margin: 0;
+}
+
+/* Section Styling */
+.farm-page section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Content Box Styling */
+.farm-page .content-box {
+    background-color: rgb(93, 75, 47); /* Dark brown background */
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    box-shadow: none; /* Remove shadow */
+}
+
+.farm-page .content-box img {
+    width: 500px; /* Set a fixed width for the images */
+    height: 300px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensure the images are cropped properly */
+    box-shadow: none; /* Remove shadow */
+    margin-bottom: 10px; /* Add spacing below the image */
+}
+
+.farm-page .content-box h2 {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center; /* Center align the title */
+}
+
+/* Paragraph Styling */
+.farm-page .content-box p {
+    font-family: Arial, sans-serif; /* Arial font */
+    color: white; /* White text */
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    text-align: center; /* Center align the paragraph */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333; /* Dark background for contrast */
+    color: white; /* White text for readability */
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+    border: none; /* Ensure no border is applied */
+}
+
+.footer-content {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 16px;
+}
+/* Hero Section for farm.html */
+.farm-page .hero {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px; /* Adjusted height for better proportions */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.farm-page .hero h1 {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 60px;
+    margin: 0;
+}
+
+/* Header Styling */
+.farm-page header {
+    background-image: url('webroot/side-view-woman-living-farmhouse.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 700px; /* Cropped height */
+    position: relative;
+    text-align: center;
+    padding-top: 100px; /* Moves text down */
+}
+
+.farm-page header h1 {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 60px;
+    margin: 0;
+}
+
+/* Section Styling for farm.html */
+.farm-page main section {
+    padding: 30px;
+    margin: 20px auto;
+}
+
+.farm-page main section p {
+    max-width: 900px;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #f5f5f5; /* Light text for readability */
+    margin-bottom: 15px;
+}
+
+.farm-page main section h2 {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 35px;
+    color: #d2b48c; /* Light tan for title */
+    margin-bottom: 15px;
+    text-align: center; /* Center align all h2 */
+}
+
+/* Footer Styling for farm.html */
+.farm-page footer {
+    background-color: rgb(45, 37, 23); /* Darker brown for footer */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 16px;
+}
+
+.farm-page footer p {
+    margin: 0;
+}
+
+/* Image Styling for farm.html */
+.farm-page .content-box img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow to images */
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.farm-page .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d2b48c; /* Light tan for button */
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.farm-page .button:hover {
+    background-color: #c8a165; /* Slightly darker tan for hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.address-text {
+    font-size: 16px; /* Set a reasonable font size */
+    line-height: 1.5; /* Add line height for better readability */
+    color: #333; /* Set a consistent text color */
+    text-align: center; /* Center-align the text */
+    margin: 5px 0; /* Add some spacing between lines */
+}
