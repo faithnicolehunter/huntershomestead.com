@@ -1116,7 +1116,7 @@ footer {
 .address-text {
     font-size: 16px; /* Set a reasonable font size */
     line-height: 1.5; /* Add line height for better readability */
-    color: #333; /* Set a consistent text color */
+    color: white; /* Set a consistent text color */
     text-align: center; /* Center-align the text */
     margin: 5px 0; /* Add some spacing between lines */
 }
